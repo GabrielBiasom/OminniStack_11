@@ -1,0 +1,462 @@
+                     /******************GLOBAL****************************/
+body {
+    background-color: rgb(105, 107, 211);
+    /*text-align: center;*/
+    margin: 0;
+    color: rgb(220, 255, 168);
+    font-family: 'Montserrat', sans-serif;   
+    
+}
+
+body.hideScroll{
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.button {
+    background-color: rgb(255, 126, 238);
+    /*border-color: rgb(255, 0, 0);
+    */
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 8px 16px rgb(255, 104, 159);
+    font-size: 25px;
+    font-weight:bold ;
+    line-height: 18px;
+    letter-spacing:0,2px ;
+    transition: 600ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button:hover{
+    text-decoration:underline;
+    background-color: rgb(255, 109, 255);
+    color: rgb(146, 0, 146);
+    box-shadow: 0px 8px 16px rgb(255, 0, 255);
+    
+}
+
+p, .description{
+    font-size: 23px;
+    line-height: 22px;
+    letter-spacing: 0,1%;
+}
+
+/********************** PADRÃO **********************/
+
+#container{
+    background-color: rgb(255, 175, 146);
+    max-width: 1800px;
+    height: 1500px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*width: 99%;*/
+    display: flex;
+    margin: 40px auto;
+    border-radius: 6px;
+    
+}
+
+#intro {
+    width: 50%;
+    height: 300px;
+    margin-right: 64px;
+    margin-left: 6px;
+    
+}
+
+main{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#paragrafo {
+    color: rgb(148, 0, 0);
+    font-size: 25px;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 40px;
+    
+}
+
+#buttons{
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-evenly;
+
+}
+
+button.b1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 8px 16px rgb(255, 255, 255);
+    font-size:20px;
+    font: normal;
+    font-weight:bold;
+    line-height: 18px;
+    letter-spacing:0,2px;
+    transition: 600ms;
+}
+
+button.b1:hover{
+   background-color: rgb(156, 255, 147);
+   color: rgb(0, 100, 30);
+   box-shadow: 0px 8px 16px rgb(9, 255, 0);
+}
+
+button#deletar{
+    background-color: rgb(255, 184, 184);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 180px;
+    height: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgb(255, 203, 203);
+    font-size: 25px ;
+    font: normal;
+    font-weight:bold;
+    line-height: 18px;
+    letter-spacing:0,2px;
+    transition: 600ms;  
+    /*grid-row: 2;
+    display: flex;
+    grid-column: 2;
+    justify-self: end;
+    align-items: center;
+    justify-content: center;
+    */
+}
+
+button#deletar:hover{
+    background-color: rgb(255, 147, 147);
+    color: rgb(100, 0, 0);
+    box-shadow: 0px 8px 16px rgb(255, 0, 0);
+}
+
+#footer{
+    text-align: center;
+    color: rgb(153, 0, 153);
+    font-size:19px ;
+    font-weight:regular;
+    line-height: 18px;
+    letter-spacing:0,2px ;
+}
+
+#footer a {
+    /*text-decoration: underline;
+    color: rgb(160, 0, 0);
+    */text-decoration-color: rgb(238, 255, 0);
+}
+#footer b {
+    color: rgb(187, 0, 0);
+}
+
+footer a:hover{
+    color: rgb(187, 0, 0);
+    font-weight: bold;
+    transition: 500ms;
+}
+
+.idea{
+    display: flex;
+    margin-bottom: 32px;
+    margin-top: 10px;
+    background-color: rgb(204, 68, 152);
+    border:3px solid ;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0  4px 16px -1px rgb(234, 0, 255);
+    height: auto;
+    transition: 600ms;
+}
+
+/*.idea:hover{
+    width: 50%;
+    height: 50%;
+    transition: 600MS;
+    font-size: 40px;
+    transition: width 2s, height 2s;
+}*/
+
+.idea img{
+    width: 100px;
+    height: 100px;
+    margin-right: 32px;
+}
+
+.idea h3{
+    margin: 0;
+    font: 50px normal;
+}
+
+.idea p{
+    margin: 8px 0;
+    color: rgb(17, 255, 255);
+    font-size: 30px;
+}
+
+.idea description{
+    margin: 30px 0;
+    font-size: 30px normal;
+}
+
+.idea a{
+    background-color: rgb(147, 206, 255);
+    color: rgb(0, 60, 100);
+    font-size: 25px ;
+    border-radius: 8px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX MODAL  XXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+#modal{
+    background-color: rgb(204, 68, 152);
+    position: fixed;
+
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 600ms;
+}
+
+#modal.addScroll{
+    overflow: auto;
+}
+
+#modal h1{
+    font-size: 50px;
+}
+
+#modal .content{
+margin-top: 5%;
+color: rgb(113, 255, 255);
+}
+
+#modal form {
+    max-width: 800px;
+    width: 80%;
+    margin-top: 15%;
+    margin: 0 auto 15% ;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+/*.content form{
+    max-width: 800px;
+    width: 80%;
+
+    margin: 0 auto;
+}*/
+
+/*.input-wrapper{
+    margin: 16px 0 ;
+}*/
+
+form input,form textarea{
+    width: 100%;
+    /*padding: 12px;*/
+    border-radius:6px;
+    border: 3px solid rgb(51, 246, 253);
+    font-size: 25px;
+    margin-left: 0px auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    height: 50px;
+
+}
+
+form label{
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-size: 25px;
+}
+
+form button{
+    background: rgb(88, 230, 255);
+    width: 150px;
+    height: 40px;
+    color: rgb(255, 0, 157);
+
+    cursor:pointer;
+    font-size: 30px;
+    border-radius: 50px;
+    margin-top: 3px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 600ms;
+}
+
+form a{
+    background: rgb(88, 230, 255);
+    width: 150px;
+    height: 40px;
+    color: rgb(255, 0, 157);
+
+    cursor:pointer;
+    font-size: 30px;
+    border-radius: 50px;
+    grid-column: 2;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 600ms;
+}
+
+form a:hover{
+    background-color: rgb(255, 0, 157); 
+    color: rgb(88, 230, 255); 
+    text-decoration: none;
+
+}
+
+form button:hover{
+    background-color: rgb(255, 0, 157); 
+    color: rgb(88, 230, 255); 
+    text-decoration: none;
+    
+}
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/******************** IDEA.HTML ***********************/
+#page-ideas #container{
+    display: block;
+    
+}
+
+#page-ideas header {
+    display: flex;
+    justify-content:space-between ;
+    
+}
+
+#page-ideas nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+#page-ideas nav li{
+    list-style-type: none;
+    margin-right: 16px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+#page-ideas nav li a.button{
+    color: lightgoldenrodyellow;
+}
+
+#page-ideas nav li:last-child {
+    margin: 2px;
+
+}
+
+#page-ideas nav li:last-child :hover{
+    color: rgb(60, 255, 0);
+}
+
+section#title{
+    text-align: center;
+}
+
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+    font-size: 30px;
+}
+
+section#title h1{
+    margin: 0;
+    font-size: 60px;
+}
+
+section#ideas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+section#ideas .idea{
+    margin: 0;
+}
+
+section#title,
+section#ideas,
+footer{
+    margin-top: 64px;
+}
+
+/*
+
+#page-ideas nav li:last-child a {
+    background-color: rgb(204, 68, 152);
+    color: rgb(255, 255, 255);
+  
+}
+
+#page-ideas nav li:last-child a:hover{
+    text-decoration: none;
+    background-color: rgb(1, 255, 1);
+    color: rgb(151, 0, 165);
+}
+
+body:: -webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body:: -webkit-scrollbar-track{
+    background-color: black;
+}
+
+body:: -webkit-scrollbar-trumb{
+    background-color: blueviolet;
+}
+
+#intro header a img {
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed--);
+}
+
+#intro header a img: :hover{
+    transform: rotate(-180deg);
+}
+*/

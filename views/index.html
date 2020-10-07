@@ -1,0 +1,93 @@
+ {% extends "layout.html"%}
+ {% block content %}
+ 
+ <!----------------------GERAL--------------------------------------->
+
+ <section id="intro">
+    <!------------------CONTAINER INICIAL--------------------------->
+    <header>
+        <!--------------CABEÇALHO----------------------------------->
+        <a href="/">
+            <img src="/logo.png" alt="Imagem da logo">
+        </a>
+    </header>
+    <!-------------FIM-CABEÇALHO**************************************-->
+
+    <main>
+        <!--------------CONTEUDO PRINCIPAL-------------------------->
+        <p id="paragrafo">
+            Ficar em casa em periodos longos, não deve ser nada fácil.
+        </p>
+
+        <p id="paragrafo">
+            Por isso, iremos catalogar <strong>ideias, bincadeiras, jogos, filmes,
+                livros, cursos, dicas</strong> e tudo que for necessário para tornar
+            esse momento mais interessante.
+        </p>
+
+        <p id="paragrafo">
+            Comece clicando em ver ideias para ver as ideias
+            cadastradas e contribua adicionando a sua ideia.
+        </p>
+
+        <section id="buttons">
+            <!--CONTEINER PARA OS BOTOES------------------------------->
+
+            <button class="b1" onclick="onOff()"> <strong>+ Adicionar ideias </strong></button>
+            <a href="/ideias" class="button"> <strong> Ver ideias </strong></a>
+        </section>
+        <!---FIM-CONTEINER PARA OS BOTOES********************************-->
+
+        <footer id="footer">
+            Com amor <a href="https://www.instagram.com/g_biasom/" target="_blank"> BIASOM</a> <b>❤</b>
+        </footer>
+
+    </main>
+    <!-------------FIM-CONTEUDO PRINCIPAL*****************************-->
+
+</section>
+<!--FIM DO CONTAINER DE INTRO******************************************-->
+
+<section id="last-ideias">
+
+
+    {% include "all_ideas.html" %}
+
+
+    <!--    <div class="idea">
+        <img src="/chip.png" alt="Exercícios">
+
+        --2 IMAGEM XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--
+        <div class="content">
+            <h3>Exercícios</h3>
+            <p>Saúde</p>
+            <div class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum necessitatibus repellendus
+                neque enim laborum iure dolores omnis laudantium. Non animi vero at ab? Nihil expedita, quaerat
+                temporibus ipsum aspernatur omnis.
+            </div>
+            <a href="#">Ir para a ideia</a>
+        </div>
+
+    </div>
+
+    <div class="idea">
+        <img src="https://image.flaticon.com/icons/svg/2731/2731680.svg" alt="Imagem de meditação">
+
+        --3 IMAGEM XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--
+        <div class="content">
+            <h3>Meditação</h3>
+            <p>Mentalidade</p>
+            <div class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum necessitatibus repellendus
+                neque enim laborum iure dolores omnis laudantium. Non animi vero at ab? Nihil expedita, quaerat
+                temporibus ipsum aspernatur omnis.
+            </div>
+            <a href="#">Ir para a ideia</a>
+        </div> -->
+
+
+
+</section>
+
+{% endblock %}

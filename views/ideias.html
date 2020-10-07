@@ -1,0 +1,93 @@
+{% extends "layout.html"%}
+
+{% block title %}
+<title>Ideias - Casa criativa</title>
+{% endblock title%}
+
+{% set bodyId = "page-ideas" %}
+
+{% block content %}
+<header>
+    <a href="/">
+
+        <img src="/logo.png" alt="Image da logomarca">
+    </a>
+    <nav>
+
+        <li><a href="/">Inicio</a></li> <!-- <li> = tag de lista-->
+
+        <li><a class="button" href="#" onclick="onOff()">Nova ideia</a></li>
+
+    </nav>
+</header>
+
+<section id="title">
+    <p>Em exibição </p>
+    <h1>Ideias</h1>
+</section>
+<main>
+    <section id="ideas">
+
+        {% include "all_ideas.html" %}
+
+        <!--2 IMAGEM XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                <div class="idea">
+                    <img src="/chip.png" alt="Exercícios">
+
+                    <div class="content">
+                        <h3>Exercícios</h3>
+                        <p>Saúde</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum necessitatibus repellendus
+                            neque enim laborum iure dolores omnis laudantium. Non animi vero at ab? Nihil expedita,
+                            quaerat
+                            temporibus ipsum aspernatur omnis.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+
+                </div>
+
+                3 IMAGEM XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2731/2731680.svg" alt="Imagem de meditação">
+
+                    <div class="content">
+                        <h3>Meditação</h3>
+                        <p>Mentalidade</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum necessitatibus repellendus
+                            neque enim laborum iure dolores omnis laudantium. Non animi vero at ab? Nihil expedita,
+                            quaerat
+                            temporibus ipsum aspernatur omnis.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+
+                </div>
+
+                4 IMAGEM XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/776/776541.svg" alt="Viagem">
+
+                    <div class="content">
+                        <h3>Planos</h3>
+                        <p>Viagem</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum necessitatibus repellendus
+                            neque enim laborum iure dolores omnis laudantium. Non animi vero at ab? Nihil expedita,
+                            quaerat
+                            temporibus ipsum aspernatur omnis.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+            -->
+
+    </section>
+</main>
+
+<footer id="footer">
+    Com amor <a href="https://www.instagram.com/g_biasom/" target="_blank"> BIASOM</a> <b>❤</b>
+</footer>
+{% endblock %}
